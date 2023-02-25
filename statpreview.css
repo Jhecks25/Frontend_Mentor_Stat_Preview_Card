@@ -39,6 +39,7 @@ body{ Font size: 15px; background-color: hsl(233, 47%, 7%);}
   color: hsla(0, 0%, 100%, 0.75);
   font-family: 'Lexend Deca',
   sans-serif;
+  padding-top: 20px;
   line-height: 30px;
 }
 
@@ -53,9 +54,10 @@ flex-basis: 200px;
 padding-top: 30px;
 }
 
-.flex-span p{
+.flex-span span > p{
    text-transform: uppercase;
    font-size: 11px;
+   padding: 0;
    color: hsla(0, 0%, 100%, 0.6);
    font-family: 'Inter', sans-serif;
  }
@@ -89,7 +91,7 @@ padding-top: 30px;
 
   .text-container{ width: 80%; border-radius: 10px 0px 0 10px;}
 
-  .text{ margin-top: 30px; text-align: left; margin: 0 auto;}
+  .text{ text-align: left; margin: 0 auto;}
 
   .text p{ margin-left: 20px;}
 
