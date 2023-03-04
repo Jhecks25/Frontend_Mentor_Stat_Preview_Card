@@ -1,12 +1,16 @@
 *{ margin: 0; padding: 0; box-sizing: border-box;}
 
-body{ Font size: 15px; background-color: hsl(233, 47%, 7%);}
+body{ background-color: hsl(233, 47%, 7%);}
 
-.wrapper{ width: 90%; margin: 60px auto;}
+main{margin: 4em 0;}
+
+/*.wrapper{ width: 90%; margin: 60px auto;}*/
 
 .flex-container{
+  min-height: 100vh;
   display: flex;
   flex-flow: row wrap;
+  align-items: center;
   justify-content: center;
 }
 
@@ -14,38 +18,33 @@ body{ Font size: 15px; background-color: hsl(233, 47%, 7%);}
   background: url("images/image-header-mobile.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  width: 100%;
-  height: 250px;
-  filter: opacity(0.6) drop-shadow(0 0 hsl(277, 64%, 61%)) contrast(1) saturate(3);
+  width: 90vw;
+  height: 40vh;
+  background-color: hsl(277, 64%, 61%);
+  background-blend-mode: multiply;
+  opacity: 0.9;
+/*  filter: opacity(0.6) drop-shadow(0 0 hsl(277, 64%, 61%)) contrast(1) saturate(3);*/
   border-radius: 5px 5px 0px 0px;
 }
 
-.text-container{ background-color: hsl(244, 38%, 16%); border-radius: 0px 0px 5px 5px;}
+.text-container{ width: 90vw; height: 90vh; background-color: hsl(244, 38%, 16%); border-radius: 0px 0px 5px 5px;}
 
-.text{
-  width: 90%;
-  margin: 0 auto;
-  text-align: center;
-  padding-top: 40px;
-  font-size: 15px;
-  letter-spacing: 1px;
-}
+.text{width: 85vw; margin: 0 auto; padding-top: 2.4em; font-size: 0.9rem}
 
-.text h1, h2{
-  color: hsl(0, 0%, 100%);
-  font-family: 'Inter', sans-serif;
-}
+.text, .sub-text{text-align: center;}
 
-.text span{
-color: hsl(277, 64%, 61%);
-}
+.text, .sub-text > p{letter-spacing: 0.1rem;}
 
-.text p{
+.text > h1, .sub-text > h2{color: hsl(0, 0%, 100%); font-family: 'Inter', sans-serif;}
+
+.text span{color: hsl(277, 64%, 61%);}
+
+.text > p{
   color: hsla(0, 0%, 100%, 0.75);
   font-family: 'Lexend Deca',
   sans-serif;
-  padding-top: 20px;
-  line-height: 30px;
+  padding-top: 1em;
+  line-height: 2rem;
 }
 
 .flex-span{
@@ -54,60 +53,61 @@ color: hsl(277, 64%, 61%);
   justify-content: center;
 }
 
-.flex-span span{
+.flex-span 
+> 
+.sub-text{
 flex-basis: 200px;
 padding-top: 30px;
 }
 
-.flex-span span > p{
+.flex-span 
+> 
+.sub-text > p{
    text-transform: uppercase;
-   font-size: 11px;
-   padding: 0;
+   font-size: 0.8rem;
+   padding-top: 0.5em;
    color: hsla(0, 0%, 100%, 0.6);
    font-family: 'Inter', sans-serif;
  }
 
-.attribution {
-  font-size: 11px;
-  text-align: center;
-  color: hsl(0, 0%, 100%)
-}
+.attribution{font-size: 0.8rem; text-align: center; color: hsl(0, 0%, 100%);}
 
-.attribution a { color: hsl(228, 45%, 44%); text-decoration: none;}
+.attribution a{ color: hsl(228, 45%, 44%); text-decoration: none;}
 
 @media screen and (min-width: 768px) {
 
-  .wrapper{width: 60%; margin-top: 10%;}
+  main{width: 60%; margin: 0 auto;}
 
   .flex-container{
     display: flex;
     flex-flow: nowrap;
     flex-direction: row-reverse;
-    justify-content: center;
   }
 
   .image-container{
     background-image: url("images/image-header-desktop.jpg");
-    width: 80%;
-    height: 400px;
-    margin-top: 0px;
+    width: 80vw;
+    height: 25em;
+    margin-top: 0;
     border-radius: 0 10px 10px 0;
   }
 
-  .text-container{ width: 80%; border-radius: 10px 0px 0 10px;}
+  .text-container{ width: 30vw; height: 50.5vh; border-radius: 10px 0px 0 10px;}
 
-  .text{ text-align: left; margin: 0 auto;}
+  .text{ width: 30vw;}
+
+  .text, .sub-text{ text-align: left;}
 
   .text p{ margin-left: 20px;}
 
-  .text h1, span{ margin: 10px; padding: 10px;}
+  .text h1{ margin: 10px; padding: 10px;}
 
-  .flex-span{flex-flow: nowrap;}
+  .flex-span{ flex-flow: nowrap;}
 
-  .flex-span span > p{margin: 0;}
+  .sub-text{margin-left: 1em; padding: 0;}
 
-  .attribution {
-     font-size: 15px;
+  .attribution{
+     font-size: 1rem;
      text-align: center;
      color: hsl(0, 0%, 100%)
    }
