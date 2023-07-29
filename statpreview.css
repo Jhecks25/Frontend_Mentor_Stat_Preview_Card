@@ -27,7 +27,7 @@ main{margin: 4em 0;}
   border-radius: 5px 5px 0px 0px;
 }
 
-.text-container{ width: 90vw; height: 90vh; background-color: hsl(244, 38%, 16%); border-radius: 0px 0px 5px 5px;}
+.text-container{ width: 90vw; height: 95vh; background-color: hsl(244, 38%, 16%); border-radius: 0px 0px 5px 5px;}
 
 .text{width: 85vw; margin: 0 auto; padding-top: 2.4em; font-size: 0.9rem}
 
@@ -39,26 +39,13 @@ main{margin: 4em 0;}
 
 .text span{color: hsl(277, 64%, 61%);}
 
-.text > p{
-  color: hsla(0, 0%, 100%, 0.75);
-  font-family: 'Lexend Deca',
-  sans-serif;
-  padding-top: 1em;
-  line-height: 2rem;
-}
+.text > p{color: hsla(0, 0%, 100%, 0.75); font-family: 'Lexend Deca', sans-serif; padding-top: 1em; line-height: 2rem;}
 
-.flex-span{
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
-}
+.flex-span{ display: flex; flex-flow: row wrap; justify-content: center;}
 
 .flex-span 
 > 
-.sub-text{
-flex-basis: 200px;
-padding-top: 30px;
-}
+.sub-text{ flex-basis: 200px; padding-top: 30px;}
 
 .flex-span 
 > 
@@ -78,27 +65,23 @@ padding-top: 30px;
 
   main{width: 60%; margin: 0 auto;}
 
-  .flex-container{
-    display: flex;
-    flex-flow: nowrap;
-    flex-direction: row-reverse;
-  }
+  .flex-container{display: flex; flex-flow: nowrap; flex-direction: row-reverse;}
 
   .image-container{
     background-image: url("images/image-header-desktop.jpg");
     width: 80vw;
-    height: 25em;
+    height: 60vh;
     margin-top: 0;
     border-radius: 0 10px 10px 0;
   }
 
-  .text-container{ width: 30vw; height: 50.5vh; border-radius: 10px 0px 0 10px;}
+  .text-container{ width: 30vw; height: 60vh; border-radius: 10px 0px 0 10px;}
 
   .text{ width: 30vw;}
 
   .text, .sub-text{ text-align: left;}
 
-  .text p{ margin-left: 20px;}
+  .text p{ margin-left: 20px; color: hsla(0, 0%, 100%, 0.6); font-size: 0.8rem; font-family: 'Inter', sans-serif;}
 
   .text h1{ margin: 10px; padding: 10px;}
 
@@ -106,9 +89,5 @@ padding-top: 30px;
 
   .sub-text{margin-left: 1em; padding: 0;}
 
-  .attribution{
-     font-size: 1rem;
-     text-align: center;
-     color: hsl(0, 0%, 100%)
-   }
+  .attribution{font-size: 1rem; text-align: center; color: hsl(0, 0%, 100%);}
 }
